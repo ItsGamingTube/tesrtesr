@@ -1,0 +1,28 @@
+{
+    "mongo_url": "mongodb+srv://discordpublicdb:SnHnFCyB2ejUWh5@discordpublic.qlozb.mongodb.net/?retryWrites=true&w=majority",
+    "server": {
+        "id": "744683736343248987",
+        "invite": "https://discord.gg/TNJuQyD",
+        "mod_log_id": "744685510391496835",
+        "admin_user_ids": ["221563533048020995", "546000222300536844"],
+        "role_ids": {
+            "bot": "744689935864299663",
+            "unverified": "748262027369381890",
+            "verified": "748262119652196475",
+            "unmuted": "748262140929900665",
+
+            "bot_developer": "748262396803678249",
+            "bot_verifier": "748262413316653087"
+        }
+    },
+    "discord_client": {
+        "id": "711010237091676233",
+        "secret": "BoKcnaR60JUgFLND6iL6VVU1B9UkTAKU",
+        "prefix": "gq!"
+    },
+    "web": {
+        "domain_with_protocol": "https://discord-bot-list-8.itsgamingtube.repl.co",
+        "port": 8080,
+        "ratelimit": 30
+    }
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta property="og:title" content="Discord Bots" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Just another bot list for discord..." />
+    <meta name="description" content="Just another bot list for discord..." />
+    <meta name="og:image" content="/assets/img/logo.png" />
+    <meta name="theme-color" content="#d2efe6" />
+    <link href="https://fonts.googleapis.com/icon?family=Markazi+Text" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="shortcut icon" type="image/png" href="/assets/img/logo.png" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/theme" rel="stylesheet">
+    <script src="/assets/js/main.js"></script>
+    <title>Discord Bots</title>
+</head>
+
+<body>
+    
+    <style>
+  .hero-overlay-11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30vh;
+  max-height: 200px;
+  margin-bottom: -10px;
+  padding-top: 100px;
+  padding-bottom: 115px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("<%= user.displayAvatarURL() %>");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("<%= user.displayAvatarURL() %>");
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+  color: #fff;
+}
+
+.centered-container-11 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+}
+
+.w-image {
+  margin-left: 63px;
+  padding-left: 0px;
+}
+
+.w-heading {
+  margin-top: -94px;
+  margin-right: 0px;
+  margin-left: -100px;
+  text-align: left;
+}
+
+.paragraph {
+  overflow: hidden;
+  margin-bottom: -4px;
+  margin-left: -101px;
+  text-align: left;
+}
+
+.utility-page-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  max-width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.utility-page-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 260px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.utility-page-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.hero-overlay-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40vh;
+  max-height: 780px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("<%= user.displayAvatarURL() %>");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("<%= user.displayAvatarURL() %>");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .heading {
+    margin-left: 24px;
+  }
+  .paragraph {
+    margin-left: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-overlay {
+    padding: 40px 20px;
+  }
+  .hero-overlay-2 {
+    padding: 40px 20px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .centered-container {
+    text-align: left;
+  }
+}
+</style>
+  <div id="content" style="margin-top: 0px;">
+  <!-- <img src="<%= user.displayAvatarURL() %>" width="500" height="600"> -->
+         
+       <!-- <span class="header">
+            <h1>
+                <%= user.username %>
+            </h1>
+            <div class="badge-holder">
+                <%- admin ? "<span class='badge'><img src='/assets/img/admin.png' title='Admin' /> Admin</span>" : "" %>
+            </div> 
+            </span> -->
+           <header id="hero-overlay-11" class="hero-overlay-2"><div class="centered-container-11 w-container"><h1 style="color:white"><%= user.username %></h1><br> <%- admin ? "<span class='badge'><img src='/assets/img/admin.png' title='Admin' /> Admin</span>" : "" %></div></header>
+   <br>
+ 
+        <div id="cards">
+            <% for(let i of cards) { %>
+                <div class="card">
+                    <img src="<%= i.logo %>" class="icon">
+                    <h2 class="title">
+                        <%= i.username %>
+                    </h2>
+                    <p class="desc">
+                        <%= i.description %>
+                    </p>
+                    <a href="/bots/<%= i.botid %>/" class="small button">View bot</a>
+                </div>
+                <% } %>
+        </div>
+    </div>
+ <a id="back" class="button" href="/">Go Home</a>
+</body>
+
+</html>
